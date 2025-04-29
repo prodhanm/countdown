@@ -25,7 +25,6 @@ int main()
 	int result = countDown(num);
     if (result != 0) {
         printf("%d\n", result);
-	    cout << 0 << endl;
     }
     else {
         cout << "Countdown complete!\n" << endl;
