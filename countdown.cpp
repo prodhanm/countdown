@@ -6,9 +6,11 @@ int countDown(int num) {
         return 0;
     }
     else if (num < 0) {
+		cout << num << endl;
         return countDown(num + 1);
     }
     else {
+		cout << num << endl;
         return countDown(num - 1);
     }
 
@@ -16,6 +18,17 @@ int countDown(int num) {
 
 int main()
 {
+    int num;
+	cout << "Enter a number: ";
+	cin >> num;
+	int result = countDown(num);
+    if (result != 0) {
+        printf("%d\n", result);
+	    cout << 0 << endl;
+    }
+    else {
+        cout << "Countdown complete!\n" << endl;
+    }
     return 0;
 }
 
